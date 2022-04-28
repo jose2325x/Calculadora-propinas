@@ -1,0 +1,173 @@
+:root {
+  --scyan-color: hsl(172, 67%, 45%); /*Strong cyan*/
+  --vdcyan-color: hsl(183, 100%, 15%); /*Very dark cyan*/
+  --dgcyan-color: hsl(186, 14%, 43%); /*Dark grayish cyan*/
+  --gcyan-color: hsl(184, 14%, 56%); /*Grayish cyan*/
+  --lgcyan-color: hsl(185, 41%, 84%); /*Light grayish cyan*/
+  --vlgcyan-color: hsl(189, 41%, 97%); /*Very light grayish cyan*/
+  --white-color: hsl(0, 0%, 100%); /*White*/
+  --modo:row;
+  --used: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--lgcyan-color);
+  color: var(--dgcyan-color);
+}
+.img {
+  position: relative;
+}
+.img-logo {
+  top: 5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-dollar {
+  left: -25px;
+  bottom: -40px;
+}
+.img-person {
+  left: -130px;
+  bottom: -40px;
+}
+
+.container {
+  position: relative;
+  top: 15vh;
+  display: flex;
+  width: 800px;
+  padding: 40px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: var(--modo);
+  /* flex-direction: row;   cuando cambie a column debe tambien cambiar el width de 800 a 400*/
+  justify-content: space-between;
+  background-color: var(--vlgcyan-color);
+  color: var(--dgcyan-color);
+  border-radius: 20px;
+}
+
+.box {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.box-result {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vdcyan-color);
+}
+.form__field {
+  margin-bottom: 2rem;
+}
+.text {
+  color: var(--white-color);
+}
+.a-text {
+  position: relative;
+  top: -25px;
+  font-size: 0.9em;
+  color: var(--gcyan-color);
+}
+.result-out {
+  margin-top: 2.5rem;
+  margin-bottom: -25px;
+  margin-left: 1.5rem;
+}
+.button,
+.tip,
+.reset,
+.input {
+  font-weight: bold;
+  font-size: 1.5em;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.button,
+.tip,
+.reset {
+  width: 100px;
+  height: 40px;
+  background-color: var(--vdcyan-color);
+  color: var(--white-color);
+}
+
+
+.input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  text-align: right;
+  border: 2px solid var(--used);
+  color: var(--vdcyan-color);
+}
+
+.buttons-top,
+.buttons-bottom {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons-top {
+  margin-top: 20px;
+}
+.buttons-bottom {
+  margin-bottom: 2.5rem;
+}
+.reset {
+  position: relative;
+  top: 100px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--gcyan-color);
+  color: hsl(183, 100%, 15%);
+}
+.tip {
+  text-align: right;
+  background-color: var(--vlgcyan-color);
+  color: var(--vdcyan-color);
+}
+.button:hover,
+.reset:hover {
+  background-color: var(--scyan-color);
+  cursor: pointer;
+}
+
+.text-result {
+  position: relative;
+  bottom: 15px;
+  left: 110px;
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--scyan-color);
+}
+
+.on {
+  background-color: var(--scyan-color);
+}
+.prueba{
+  background-color: var(--vdcyan-color);
+}
+
+.position {
+  position: relative;
+  bottom: 15px;
+  left: 50px;
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--scyan-color);
+}

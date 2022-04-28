@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <img src="/images/logo.svg" alt="logo" class="img img-logo">
+    <button class="button" id="modo">Modo</button>
+    <div class="container">
+      <div class="box">
+        <form action="#" method="post" class="form" id="form">
+          <div class="form__field">
+            <label for="bill">Bill</label>
+            <img src="/images/icon-dollar.svg" alt="dollar" class="img img-dollar">
+            <input type="text" id="bill" name="bill" class="input" placeholder="0">
+          </div>
+          <div class=" form__field">
+            <label for="tip">Selected Tip %</label>
+            <div class="buttons-top">
+              <button class="button">5%</button>
+              <button class="button">10%</button>
+              <button class="button">15%</button>
+            </div>
+            <div class="buttons-bottom">
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <input type="text" id="tip" name="tip" class="tip" placeholder="Custom">
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="number_people">Number of People</label>
+            <img src="/images/icon-person.svg" alt="person" class="img img-person">
+            <input type="text" id="number_people" name="number_people" placeholder="0" class="input">
+          </div>
+        </form>
+      </div>
+      <div class="box box-result">
+        <div class="result-out">
+          <span><a class="text">Tip Amount</a> <br><a class="a-text">/ person</a></span>
+          <span id="tip_amount" class="text-result">$0.00</span>
+        </div>
+        <div class="result-out">
+          <span><a class="text">Total</a><br> <a class="a-text">/ person</a></span>
+          <span id="total" class="text-result">$0.00</span>
+        </div>
+        <button id="reset" class="reset">RESET</button>
+      </div>
+    </div>
+  </main>
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>
