@@ -103,12 +103,6 @@ reset.addEventListener('click', () => {
     }
 })
 
-const modo = document.getElementById('modo')
-modo.addEventListener('click', () => {
-    const root = document.documentElement
-    root.style.setProperty('--modo', 'column')
-})
-
 bill.addEventListener('change',()=>{
     const root = document.documentElement
     root.style.setProperty('--used', 'hsl(172, 67%, 45%)')
